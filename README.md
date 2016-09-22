@@ -1,6 +1,6 @@
 # factorio-techtree
 
-Factorio TechTree 0.14
+Factorio TechTree
 
 ## Example
 
