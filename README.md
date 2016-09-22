@@ -7,4 +7,4 @@ Factorio TechTree 0.14
 The example features a simple [graphviz][graphviz] example von graphviz.org.
 
 
-[grpahviz]: http://www.graphviz.org "Graphviz"
+[graphviz]: http://www.graphviz.org "Graphviz"
