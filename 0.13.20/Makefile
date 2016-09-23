@@ -17,10 +17,10 @@ check-build-dir:
 	fi;
 
 # zur ansicht mal alle
-vectorgraphics: check-build-dir vector-dot vector-neato vector-twopi vector-circo vector-fdp vector-sfdp vector-patchwork
+vectorgraphics: check-build-dir vector-dot
 
 vector-dot:
-	dot -Tsvg ${FILENAME}.dot -o ${BUILDPATH}/svg/${FILENAME}_directed.svg
+	dot -Tsvg:cairo ${FILENAME}.dot -o ${BUILDPATH}/svg/${FILENAME}_directed.svg
 	dot -Tsvgz ${FILENAME}.dot -o ${BUILDPATH}/svg/${FILENAME}_directed.svgz
 
 vector-neato:
@@ -53,7 +53,7 @@ imagemap:
 		then mkdir -p ${BUILDPATH}/imagemap \
 		&& echo "${BUILDPATH}/imagemap directory created."; \
 	fi;
-	dot -Timap ${FILENAME}.dot -o ${FILENAME}.imap
+	#dot -Timap ${FILENAME}.dot -o ${FILENAME}.imap
 
 # Moeglicher Weise spannend, aber Benutzung unklar
 client-side-imagemap:
@@ -61,4 +61,4 @@ client-side-imagemap:
 		then mkdir -p ${BUILDPATH}/client-side-imagemap \
 		&& echo "${BUILDPATH}/client-side-imagemap directory created."; \
 	fi;
-	dot -Tcmapx ${FILENAME}.dot -o ${FILENAME}.cmapx
+	#dot -Tcmapx ${FILENAME}.dot -o ${FILENAME}.cmapx
