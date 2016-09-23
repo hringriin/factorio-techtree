@@ -1,24 +1,45 @@
-digraph TrafficLights {
-node [shape=box];  gy2; yr2; rg2; gy1; yr1; rg1;
-node [shape=circle,fixedsize=true,width=0.9];  green2; yellow2; red2; safe2; safe1; green1; yellow1; red1;
-gy2->yellow2;
-rg2->green2;
-yr2->safe1;
-yr2->red2;
-safe2->rg2;
-green2->gy2;
-yellow2->yr2;
-red2->rg2;
-gy1->yellow1;
-rg1->green1;
-yr1->safe2;
-yr1->red1;
-safe1->rg1;
-green1->gy1;
-yellow1->yr1;
-red1->rg1;
+digraph FactorioTechTree {
+    // global config
+    nodesep=2               // space between two adjacent nodes of the same rank
+    ranksep=2               // space between two adjacent node ranks
+    imagepath="images"      // global path for images
+    overlap=false
+    label="Factorio TechTree\nv0.13.20"
+    fontsize=32;            // only for footer, not for node labels
 
-overlap=false
-label="PetriNet Model TrafficLights\nExtracted from ConceptBase and layed out by Graphviz"
-fontsize=12;
+    // node style definition
+    node[shape=square,height=4,width=4,fixedsize=true,image="ph.png",labelloc=b,fontsize=18];
+
+    // nodes
+    advancedElectronics             [label="Advanced Electronics"];
+    automation                      [label="Automation"];
+    automation2                     [label="Automation2"];
+    automation3                     [label="Automation3"];
+    circuitNetwork                  [label="Circuit network"];
+    electricEnergyDistribution1     [label="Electric energy distribution 1"];
+    electronics                     [label="Electronics"];
+    engine                          [label="Engine"];
+    labResearchSpeed1               [label="Lab research speed 1"];
+    logistics3                      [label="Logistics 3"];
+    rocketry                        [label="Rocketry"];
+    solarEnergy                     [label="Solar energy"];
+
+    // arrow style definition
+    edge[dir=none,arrowhead=crow,arrowtail=diamond,arrowsize=3,penwidth=3];
+
+    // edges ( arrows )
+    automation ->   electronics;
+
+    electronics ->  automation2;
+    electronics ->  circuitNetwork;
+    electronics ->  advancedElectronics;
+    electronics ->  solarEnergy;
+    electronics ->  electricEnergyDistribution1;
+    electronics ->  labResearchSpeed1;
+    electronics ->  rocketry;
+
+    automation2 -> automation3;
+    automation2 -> engine;
+
+    automation3 -> logistics3;
 }
