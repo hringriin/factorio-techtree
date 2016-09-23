@@ -5,24 +5,80 @@ digraph FactorioTechTree {
     imagepath="images"      // global path for images
     overlap=false
     label="Factorio TechTree\nv0.13.20"
-    fontsize=32;            // only for footer, not for node labels
+    fontsize=64;            // only for footer, not for node labels
 
     // node style definition
-    node[shape=square,height=4,width=4,fixedsize=true,image="ph.png",labelloc=b,fontsize=18];
+    node[shape=square,style=bold,height=4.7,width=4.7,fixedsize=true,image="ph.png",labelloc=b,fontsize=20];
 
     // nodes
+
     advancedElectronics             [label="Advanced Electronics"];
+    advancedElectronics2            [label="Advanced Electronics2"];
+    advancedMaterialProcessing2     [label="Advanced Material Processing 2"];
+    automatedConstruction           [label="Automated construction"];
+    automatedRailTransportation     [label="Automated rail transportation"];
     automation                      [label="Automation"];
     automation2                     [label="Automation2"];
     automation3                     [label="Automation3"];
+    automobilism                    [label="Automobilism"];
+    characterLogisticSlots1         [label="Character logistic slots 1"];
+    characterLogisticSlots2         [label="Character logistic slots 2"];
+    characterLogisticSlots3         [label="Character logistic slots 3"];
+    characterLogisticSlots4         [label="Character logistic slots 4"];
+    characterLogisticSlots5         [label="Character logistic slots 5"];
+    characterLogisticSlots6         [label="Character logistic slots 6"];
+    characterLogisticTrashSlots1    [label="Character logistic trash slots 1"];
+    characterLogisticTrashSlots2    [label="Character logistic trash slots 2"];
+    characterLogisticTrashSlots3    [label="Character logistic trash slots 3"];
     circuitNetwork                  [label="Circuit network"];
+    constructionRobotics            [label="Construction robotics"];
+    dischargeDefense                [label="Discharge defense"];
     electricEnergyDistribution1     [label="Electric energy distribution 1"];
+    electricEngine                  [label="Electric engine"];
     electronics                     [label="Electronics"];
     engine                          [label="Engine"];
+    exoskeletonEquipment            [label="Exoskeleton equipment"];
+    flight                          [label="Flight"];
     labResearchSpeed1               [label="Lab research speed 1"];
+    laser                           [label="Laser"];
+    laserTurretDamage1              [label="Laser turret damage 1"];
+    laserTurretDamage2              [label="Laser turret damage 2"];
+    laserTurretDamage3              [label="Laser turret damage 3"];
+    laserTurretDamage4              [label="Laser turret damage 4"];
+    laserTurretDamage5              [label="Laser turret damage 5"];
+    laserTurretDamage6              [label="Laser turret damage 6"];
+    laserTurretShootingSpeed1       [label="Laser turret shooting speed 1"];
+    laserTurretShootingSpeed2       [label="Laser turret shooting speed 2"];
+    laserTurretShootingSpeed3       [label="Laser turret shooting speed 3"];
+    laserTurretShootingSpeed4       [label="Laser turret shooting speed 4"];
+    laserTurretShootingSpeed5       [label="Laser turret shooting speed 5"];
+    laserTurretShootingSpeed6       [label="Laser turret shooting speed 6"];
+    laserTurrets                    [label="Laser turrets"];
+    logisticRobotics                [label="Logistic robotics"];
+    logisticSystem                  [label="Logistic system"];
     logistics3                      [label="Logistics 3"];
+    military3                       [label="Military 3"];
+    modules                         [label="Modules"];
+    personalLaserDefense            [label="Personal laser defense"];
+    personalRoboport                [label="Personal roboport"];
+    powerArmor                      [label="Power armor"];
+    powerArmor2                     [label="Power armor 2"];
+    railSignals                     [label="Rail signals"];
+    railway                         [label="Railway"];
+    robotics                        [label="Robotics"];
     rocketry                        [label="Rocketry"];
     solarEnergy                     [label="Solar energy"];
+    stackInserter                   [label="Stack inserter"];
+    tanks                           [label="Tanks"];
+    workerRobotCargoSize1           [label="Worker robot cargo size 1"];
+    workerRobotCargoSize2           [label="Worker robot cargo size 2"];
+    workerRobotCargoSize3           [label="Worker robot cargo size 3"];
+    workerRobotSpeed1               [label="Worker robot speed 1"];
+    workerRobotSpeed2               [label="Worker robot speed 2"];
+    workerRobotSpeed3               [label="Worker robot speed 3"];
+    workerRobotSpeed4               [label="Worker robot speed 4"];
+    workerRobotSpeed5               [label="Worker robot speed 5"];
+
 
     // arrow style definition
     edge[dir=none,arrowhead=crow,arrowtail=diamond,arrowsize=3,penwidth=3];
@@ -41,5 +97,62 @@ digraph FactorioTechTree {
     automation2 -> automation3;
     automation2 -> engine;
 
+    engine -> electricEngine;
+    engine -> railway;
+    engine -> automobilism;
+
     automation3 -> logistics3;
+
+    electricEngine -> flight;
+    electricEngine -> robotics;
+    electricEngine -> exoskeletonEquipment;
+    electricEngine -> powerArmor;
+
+    flight -> constructionRobotics;
+    flight -> logisticRobotics;
+
+    constructionRobotics -> automatedConstruction;
+    constructionRobotics -> personalRoboport;
+
+    logisticRobotics -> logisticSystem
+    logisticRobotics -> characterLogisticSlots1
+    logisticRobotics -> characterLogisticTrashSlots1
+    logisticRobotics -> workerRobotSpeed1
+    logisticRobotics -> workerRobotCargoSize1
+
+    characterLogisticSlots1 -> characterLogisticSlots2 -> characterLogisticSlots3 -> characterLogisticSlots4 -> characterLogisticSlots5 -> characterLogisticSlots6;
+
+    characterLogisticTrashSlots1 -> characterLogisticTrashSlots2 -> characterLogisticTrashSlots3;
+
+    workerRobotSpeed1 -> workerRobotSpeed2 -> workerRobotSpeed3 -> workerRobotSpeed4 -> workerRobotSpeed5;
+
+    workerRobotCargoSize1 -> workerRobotCargoSize2 -> workerRobotCargoSize3;
+
+    robotics -> constructionRobotics;
+    robotics -> logisticRobotics;
+
+    powerArmor -> powerArmor2;
+
+    railway -> automatedRailTransportation;
+
+    automatedRailTransportation -> railSignals;
+
+    automobilism -> tanks;
+
+    advancedElectronics -> laser;
+    advancedElectronics -> electricEngine;
+    advancedElectronics -> advancedMaterialProcessing2;
+    advancedElectronics -> stackInserter;
+    advancedElectronics -> modules;
+
+    laser -> laserTurrets;
+    laser -> military3;
+
+    laserTurrets -> laserTurretDamage1;
+    laserTurrets -> laserTurretShootingSpeed1;
+    laserTurrets -> personalLaserDefense;
+    laserTurrets -> dischargeDefense;
+
+    laserTurretDamage1 -> laserTurretDamage2 -> laserTurretDamage3 -> laserTurretDamage4 -> laserTurretDamage5 -> laserTurretDamage6;
+
 }
