@@ -1,23 +1,34 @@
 digraph FactorioTechTree {
     // global config
-    nodesep=2               // space between two adjacent nodes of the same rank
-    ranksep=2               // space between two adjacent node ranks
+    // ratio="fill";           //
+    // size="8.267,11.692"     // DIN A4
+
+    nodesep=0.3             // space between two adjacent nodes of the same rank
+    ranksep=0.3             // space between two adjacent node ranks
     imagepath="images"      // global path for images
     overlap=false
     label="Factorio TechTree\nv0.13.20"
-    fontsize=64;            // only for footer, not for node labels
+    fontsize=48;            // only for footer, not for node labels
 
     // node style definition
-    node[shape=square,style=bold,height=4.7,width=4.7,fixedsize=true,image="ph.png",labelloc=b,fontsize=20];
+    node[shape=square,
+        //style=bold,
+        height=0.7,
+        width=0.7,
+        fixedsize=true,
+        image="ph.png",
+        labelloc=b,
+        fontsize=3,
+        imagescale=true];
 
     // nodes
 
     advancedElectronics             [label="Advanced electronics",image="Advanced-electronics-research.png"];
     advancedElectronics2            [label="Advanced electronics 2",image="Advanced-electronics-2-research.png"];
-	advancedMaterialProcessing      [label="Advanced material processing",image="Advanced-material-processing-research.png"];
+    advancedMaterialProcessing      [label="Advanced material processing",image="Advanced-material-processing-research.png"];
     advancedMaterialProcessing2     [label="Advanced material processing 2",image="Advanced-material-processing-research.png"];
-	advancedOilProcessing			[label="Advanced oil processing",image="Oil-processing-research.png"];
-    alienTechnology					[label="Alien technology",image="Alien-technology-research.png"];
+    advancedOilProcessing           [label="Advanced oil processing",image="Oil-processing-research.png"];
+    alienTechnology                 [label="Alien technology",image="Alien-technology-research.png"];
     armorCrafting                   [label="Armor crafting",image="Armor-making-research.png"];
     armorCrafting2                  [label="Armor crafting 2",image="Armor-making-research.png"];
     armorCrafting3                  [label="Modular armor",image="Armor-making-research.png"];
@@ -27,24 +38,21 @@ digraph FactorioTechTree {
     automation2                     [label="Automation 2",image="Automation-research.png"];
     automation3                     [label="Automation 3",image="Automation-research.png"];
     automobilism                    [label="Automobilism",image="Automobilism-research.png"];
-    //basicElectricDischargeDefense   [label="Discharge defense",image="Basic-electric-discharge-defense-equipment-research.png"];
-    //basicExoskeletonEquipment		[label="Exoskeleton equipment",image="Basic-exoskeleton-equipment-research.png"];
-    //basicLaserDefenseEquipment		[label="Personal laser defense",image="Basic-laser-defense-equipment-research.png"];
-    batteryEquipment				[label="Battery equipment",image="Battery-equipment-research.png"];
-    batteryEquipment2				[label="Battery MK2 equipment",image="Battery-mk2-equipment-research.png"];
-    battery 						[label="Battery",image="Battery-research.png"];
-    bulletDamage1 					[label="Bullet damage 1",image="Bullet-damage-research.png"];
-    bulletDamage2 					[label="Bullet damage 2",image="Bullet-damage-research.png"];
-    bulletDamage3					[label="Bullet damage 3",image="Bullet-damage-research.png"];
-    bulletDamage4 					[label="Bullet damage 4",image="Bullet-damage-research.png"];
-    bulletDamage5 					[label="Bullet damage 5",image="Bullet-damage-research.png"];
-    bulletDamage6 					[label="Bullet damage 6",image="Bullet-damage-research.png"];
-    bulletSpeed1 					[label="Bullet speed 1",image="Bullet-speed-research.png"];
-    bulletSpeed2 					[label="Bullet speed 2",image="Bullet-speed-research.png"];
-    bulletSpeed3 					[label="Bullet speed 3",image="Bullet-speed-research.png"];
-    bulletSpeed4 					[label="Bullet speed 4",image="Bullet-speed-research.png"];
-    bulletSpeed5 					[label="Bullet speed 5",image="Bullet-speed-research.png"];
-    bulletSpeed6 					[label="Bullet speed 6",image="Bullet-speed-research.png"];
+    battery                         [label="Battery",image="Battery-research.png"];
+    batteryEquipment                [label="Battery equipment",image="Battery-equipment-research.png"];
+    batteryEquipment2               [label="Battery MK2 equipment",image="Battery-mk2-equipment-research.png"];
+    bulletDamage1                   [label="Bullet damage 1",image="Bullet-damage-research.png"];
+    bulletDamage2                   [label="Bullet damage 2",image="Bullet-damage-research.png"];
+    bulletDamage3                   [label="Bullet damage 3",image="Bullet-damage-research.png"];
+    bulletDamage4                   [label="Bullet damage 4",image="Bullet-damage-research.png"];
+    bulletDamage5                   [label="Bullet damage 5",image="Bullet-damage-research.png"];
+    bulletDamage6                   [label="Bullet damage 6",image="Bullet-damage-research.png"];
+    bulletSpeed1                    [label="Bullet speed 1",image="Bullet-speed-research.png"];
+    bulletSpeed2                    [label="Bullet speed 2",image="Bullet-speed-research.png"];
+    bulletSpeed3                    [label="Bullet speed 3",image="Bullet-speed-research.png"];
+    bulletSpeed4                    [label="Bullet speed 4",image="Bullet-speed-research.png"];
+    bulletSpeed5                    [label="Bullet speed 5",image="Bullet-speed-research.png"];
+    bulletSpeed6                    [label="Bullet speed 6",image="Bullet-speed-research.png"];
     characterAutoLogisticTrashSlots [label="Character auto logistic trash slots",image="Character-auto-logistic-trash-slots-research.png"];
     characterLogisticSlots1         [label="Character logistic slots 1",image="Character-logistic-slots-research.png"];
     characterLogisticSlots2         [label="Character logistic slots 2",image="Character-logistic-slots-research.png"];
@@ -56,88 +64,88 @@ digraph FactorioTechTree {
     characterLogisticTrashSlots2    [label="Character logistic trash slots 2",image="Character-logistic-trash-slots-research.png"];
     characterLogisticTrashSlots3    [label="Character logistic trash slots 3",image="Character-logistic-trash-slots-research.png"];
     circuitNetwork                  [label="Circuit network",image="Circuit-network-research.png"];
-    clusterGrenade					[label="Cluster grenade",image="Cluster-grenade-research.png"];
-    combatRobotDamage1 				[label="Combat robot damage 1",image="Combat-robot-damage-research.png"];
-    combatRobotDamage2 				[label="Combat robot damage 2",image="Combat-robot-damage-research.png"];
-    combatRobotDamage3 				[label="Combat robot damage 3",image="Combat-robot-damage-research.png"];
-    combatRobotDamage4 				[label="Combat robot damage 4",image="Combat-robot-damage-research.png"];
-    combatRobotDamage5 				[label="Combat robot damage 5",image="Combat-robot-damage-research.png"];
-    combatRobitics 					[label="Combat robotics",image="Combat-robotics-research.png"];
-    combatRobitics2					[label="Combat robotics 2",image="Combat-robotics-research.png"];
-    combatRobitics3					[label="Combat robotics 3",image="Combat-robotics-research.png"];
-    concrete 						[label="Concrete",image="Concrete-research.png"];
+    clusterGrenade                  [label="Cluster grenade",image="Cluster-grenade-research.png"];
+    combatRobitics                  [label="Combat robotics",image="Combat-robotics-research.png"];
+    combatRobitics2                 [label="Combat robotics 2",image="Combat-robotics-research.png"];
+    combatRobitics3                 [label="Combat robotics 3",image="Combat-robotics-research.png"];
+    combatRobotDamage1              [label="Combat robot damage 1",image="Combat-robot-damage-research.png"];
+    combatRobotDamage2              [label="Combat robot damage 2",image="Combat-robot-damage-research.png"];
+    combatRobotDamage3              [label="Combat robot damage 3",image="Combat-robot-damage-research.png"];
+    combatRobotDamage4              [label="Combat robot damage 4",image="Combat-robot-damage-research.png"];
+    combatRobotDamage5              [label="Combat robot damage 5",image="Combat-robot-damage-research.png"];
+    concrete                        [label="Concrete",image="Concrete-research.png"];
     constructionRobotics            [label="Construction robotics",image="Construction-robotics-research.png"];
     dischargeDefense                [label="Discharge defense",image="Basic-electric-discharge-defense-equipment-research.png"];
-    effectivityModule				[label="Effectivity module",image="Effectivity-module-research.png"];
-    effectivityModule2				[label="Effectivity module 2",image="Effectivity-module-research.png"];
-    effectivityModule3				[label="Effectivity module 3",image="Effectivity-module-research.png"];
-    effectTransmission				[label="Effect transmission",image="Effect-transmission-research.png"];
-    electricEnergyAccumulators		[label="Electric energy accumulators",image="Electric-energy-acumulators-research.png"];
+    effectTransmission              [label="Effect transmission",image="Effect-transmission-research.png"];
+    effectivityModule               [label="Effectivity module",image="Effectivity-module-research.png"];
+    effectivityModule2              [label="Effectivity module 2",image="Effectivity-module-research.png"];
+    effectivityModule3              [label="Effectivity module 3",image="Effectivity-module-research.png"];
+    electricEnergyAccumulators      [label="Electric energy accumulators",image="Electric-energy-acumulators-research.png"];
     electricEnergyDistribution1     [label="Electric energy distribution 1",image="Electric-energy-distribution-research.png"];
     electricEnergyDistribution2     [label="Electric energy distribution 2",image="Electric-energy-distribution-research.png"];
     electricEngine                  [label="Electric engine",image="Electric-engine-research.png"];
     electronics                     [label="Electronics",image="Electronics-research.png"];
-    energyShieldEquipment 			[label="Energy shield equipment",image="Energy-shield-equipment-research.png"];
-    energyShieldMK2Equipment		[label="Energy shield MK2 equipment",image="Energy-shield-mk2-equipment-research.png"];
+    energyShieldEquipment           [label="Energy shield equipment",image="Energy-shield-equipment-research.png"];
+    energyShieldMK2Equipment        [label="Energy shield MK2 equipment",image="Energy-shield-mk2-equipment-research.png"];
     engine                          [label="Engine",image="Engine-research.png"];
-    explosiveRocketry				[label="Explosive rocketry",image="Explosive-rocketry-research.png"];
-    explosives 						[label="Explosives",image="Explosives-research.png"];
     exoskeletonEquipment            [label="Exoskeleton equipment",image="Basic-exoskeleton-equipment-research.png"];
-    flamethrower					[label="Flamethrower",image="Flame-thrower-research.png"];
-    flamethrowerDamage1				[label="Flamethrower damage 1",image="Flamethrower-turret-damage-research.png"];
-    flamethrowerDamage2				[label="Flamethrower damage 2",image="Flamethrower-turret-damage-research.png"];
-    flamethrowerDamage3				[label="Flamethrower damage 3",image="Flamethrower-turret-damage-research.png"];
-    flamethrowerDamage4				[label="Flamethrower damage 4",image="Flamethrower-turret-damage-research.png"];
-    flamethrowerDamage5				[label="Flamethrower damage 5",image="Flamethrower-turret-damage-research.png"];
-    flamethrowerDamage6				[label="Flamethrower damage 6",image="Flamethrower-turret-damage-research.png"];
-    flammables						[label="Flammables",image="Flammables-research.png"];
-    fluidHandling					[label="Fluid handling",image="Fluid-handling-research.png"];
+    explosiveRocketry               [label="Explosive rocketry",image="Explosive-rocketry-research.png"];
+    explosives                      [label="Explosives",image="Explosives-research.png"];
+    flamethrower                    [label="Flamethrower",image="Flame-thrower-research.png"];
+    flamethrowerDamage1             [label="Flamethrower damage 1",image="Flamethrower-turret-damage-research.png"];
+    flamethrowerDamage2             [label="Flamethrower damage 2",image="Flamethrower-turret-damage-research.png"];
+    flamethrowerDamage3             [label="Flamethrower damage 3",image="Flamethrower-turret-damage-research.png"];
+    flamethrowerDamage4             [label="Flamethrower damage 4",image="Flamethrower-turret-damage-research.png"];
+    flamethrowerDamage5             [label="Flamethrower damage 5",image="Flamethrower-turret-damage-research.png"];
+    flamethrowerDamage6             [label="Flamethrower damage 6",image="Flamethrower-turret-damage-research.png"];
+    flammables                      [label="Flammables",image="Flammables-research.png"];
     flight                          [label="Flight",image="Flying-research.png"];
-    followerRobots1					[label="Follower robot count 1",image="Follower-robots-research.png"];
-    followerRobots2					[label="Follower robot count 2",image="Follower-robots-research.png"];
-    followerRobots3					[label="Follower robot count 3",image="Follower-robots-research.png"];
-    followerRobots4					[label="Follower robot count 4",image="Follower-robots-research.png"];
-    followerRobots5					[label="Follower robot count 5",image="Follower-robots-research.png"];
-    followerRobots6					[label="Follower robot count 6",image="Follower-robots-research.png"];
-    followerRobots7					[label="Follower robot count 7",image="Follower-robots-research.png"];
-    followerRobots8					[label="Follower robot count 8",image="Follower-robots-research.png"];
-    followerRobots9					[label="Follower robot count 9",image="Follower-robots-research.png"];
-    followerRobots10				[label="Follower robot count 10",image="Follower-robots-research.png"];
-    followerRobots11				[label="Follower robot count 11",image="Follower-robots-research.png"];
-    followerRobots12				[label="Follower robot count 12",image="Follower-robots-research.png"];
-    followerRobots13				[label="Follower robot count 13",image="Follower-robots-research.png"];
-    followerRobots14				[label="Follower robot count 14",image="Follower-robots-research.png"];
-    followerRobots15				[label="Follower robot count 15",image="Follower-robots-research.png"];
-    followerRobots16				[label="Follower robot count 16",image="Follower-robots-research.png"];
-    followerRobots17				[label="Follower robot count 17",image="Follower-robots-research.png"];
-    followerRobots18				[label="Follower robot count 18",image="Follower-robots-research.png"];
-    followerRobots19				[label="Follower robot count 19",image="Follower-robots-research.png"];
-    followerRobots20				[label="Follower robot count 20",image="Follower-robots-research.png"];
-    gates							[label="Gates",image="Gates-research.png"];
-    grenadeDamage1					[label="Grenade damage 1",image="Grenade-damage-research.png"];
-    grenadeDamage2					[label="Grenade damage 2",image="Grenade-damage-research.png"];
-    grenadeDamage3					[label="Grenade damage 3",image="Grenade-damage-research.png"];
-    grenadeDamage4					[label="Grenade damage 4",image="Grenade-damage-research.png"];
-    grenadeDamage5					[label="Grenade damage 5",image="Grenade-damage-research.png"];
-    gunTurretDamage1				[label="Gun turret damage 1",image="Gun-turret-damage-research.png"];
-    gunTurretDamage2				[label="Gun turret damage 2",image="Gun-turret-damage-research.png"];
-    gunTurretDamage3				[label="Gun turret damage 3",image="Gun-turret-damage-research.png"];
-    gunTurretDamage4				[label="Gun turret damage 4",image="Gun-turret-damage-research.png"];
-    gunTurretDamage5				[label="Gun turret damage 5",image="Gun-turret-damage-research.png"];
-    gunTurretDamage6				[label="Gun turret damage 6",image="Gun-turret-damage-research.png"];
-    inserterCapacityBonus1			[label="Inserter capacity bonus 1",image="Inserter-capacity-research.png"];
-    inserterCapacityBonus2			[label="Inserter capacity bonus 2",image="Inserter-capacity-research.png"];
-    inserterCapacityBonus3			[label="Inserter capacity bonus 3",image="Inserter-capacity-research.png"];
-    inserterCapacityBonus4			[label="Inserter capacity bonus 4",image="Inserter-capacity-research.png"];
-    inserterCapacityBonus5			[label="Inserter capacity bonus 5",image="Inserter-capacity-research.png"];
-    inserterCapacityBonus6			[label="Inserter capacity bonus 6",image="Inserter-capacity-research.png"];
-    inserterCapacityBonus7			[label="Inserter capacity bonus 7",image="Inserter-capacity-research.png"];
+    fluidHandling                   [label="Fluid handling",image="Fluid-handling-research.png"];
+    followerRobots1                 [label="Follower robot count 1",image="Follower-robots-research.png"];
+    followerRobots10                [label="Follower robot count 10",image="Follower-robots-research.png"];
+    followerRobots11                [label="Follower robot count 11",image="Follower-robots-research.png"];
+    followerRobots12                [label="Follower robot count 12",image="Follower-robots-research.png"];
+    followerRobots13                [label="Follower robot count 13",image="Follower-robots-research.png"];
+    followerRobots14                [label="Follower robot count 14",image="Follower-robots-research.png"];
+    followerRobots15                [label="Follower robot count 15",image="Follower-robots-research.png"];
+    followerRobots16                [label="Follower robot count 16",image="Follower-robots-research.png"];
+    followerRobots17                [label="Follower robot count 17",image="Follower-robots-research.png"];
+    followerRobots18                [label="Follower robot count 18",image="Follower-robots-research.png"];
+    followerRobots19                [label="Follower robot count 19",image="Follower-robots-research.png"];
+    followerRobots2                 [label="Follower robot count 2",image="Follower-robots-research.png"];
+    followerRobots20                [label="Follower robot count 20",image="Follower-robots-research.png"];
+    followerRobots3                 [label="Follower robot count 3",image="Follower-robots-research.png"];
+    followerRobots4                 [label="Follower robot count 4",image="Follower-robots-research.png"];
+    followerRobots5                 [label="Follower robot count 5",image="Follower-robots-research.png"];
+    followerRobots6                 [label="Follower robot count 6",image="Follower-robots-research.png"];
+    followerRobots7                 [label="Follower robot count 7",image="Follower-robots-research.png"];
+    followerRobots8                 [label="Follower robot count 8",image="Follower-robots-research.png"];
+    followerRobots9                 [label="Follower robot count 9",image="Follower-robots-research.png"];
+    gates                           [label="Gates",image="Gates-research.png"];
+    grenadeDamage1                  [label="Grenade damage 1",image="Grenade-damage-research.png"];
+    grenadeDamage2                  [label="Grenade damage 2",image="Grenade-damage-research.png"];
+    grenadeDamage3                  [label="Grenade damage 3",image="Grenade-damage-research.png"];
+    grenadeDamage4                  [label="Grenade damage 4",image="Grenade-damage-research.png"];
+    grenadeDamage5                  [label="Grenade damage 5",image="Grenade-damage-research.png"];
+    gunTurretDamage1                [label="Gun turret damage 1",image="Gun-turret-damage-research.png"];
+    gunTurretDamage2                [label="Gun turret damage 2",image="Gun-turret-damage-research.png"];
+    gunTurretDamage3                [label="Gun turret damage 3",image="Gun-turret-damage-research.png"];
+    gunTurretDamage4                [label="Gun turret damage 4",image="Gun-turret-damage-research.png"];
+    gunTurretDamage5                [label="Gun turret damage 5",image="Gun-turret-damage-research.png"];
+    gunTurretDamage6                [label="Gun turret damage 6",image="Gun-turret-damage-research.png"];
+    inserterCapacityBonus1          [label="Inserter capacity bonus 1",image="Inserter-capacity-research.png"];
+    inserterCapacityBonus2          [label="Inserter capacity bonus 2",image="Inserter-capacity-research.png"];
+    inserterCapacityBonus3          [label="Inserter capacity bonus 3",image="Inserter-capacity-research.png"];
+    inserterCapacityBonus4          [label="Inserter capacity bonus 4",image="Inserter-capacity-research.png"];
+    inserterCapacityBonus5          [label="Inserter capacity bonus 5",image="Inserter-capacity-research.png"];
+    inserterCapacityBonus6          [label="Inserter capacity bonus 6",image="Inserter-capacity-research.png"];
+    inserterCapacityBonus7          [label="Inserter capacity bonus 7",image="Inserter-capacity-research.png"];
     labResearchSpeed1               [label="Lab research speed 1",image="Research-effectivity-research.png"];
     labResearchSpeed2               [label="Lab research speed 2",image="Research-effectivity-research.png"];
     labResearchSpeed3               [label="Lab research speed 3",image="Research-effectivity-research.png"];
     labResearchSpeed4               [label="Lab research speed 4",image="Research-effectivity-research.png"];
-    landfill						[label="Landfill",image="Landfill-research.png"];
-    landmines						[label="Landmines",image="Land-mine-research.png"];
+    landfill                        [label="Landfill",image="Landfill-research.png"];
+    landmines                       [label="Landmines",image="Land-mine-research.png"];
     laser                           [label="Laser",image="Laser-research.png"];
     laserTurretDamage1              [label="Laser turret damage 1",image="Laser-turret-damage-research.png"];
     laserTurretDamage2              [label="Laser turret damage 2",image="Laser-turret-damage-research.png"];
@@ -162,59 +170,56 @@ digraph FactorioTechTree {
     military3                       [label="Military 3",image="Military-research.png"];
     military4                       [label="Military 4",image="Military-research.png"];
     modules                         [label="Modules",image="Module-research.png"];
-    nightvisionEquipment			[label="Nightvision equipment",image="Night-vision-equipment-research.png"];
-    oilProcessing					[label="Oil processing",image="Oil-gathering-research.png"];
-    //advancedOilProcessing			[label="Advanced oil processing",image="Oil-processing-research.png"];
-    optics							[label="Optics",image="Optics-research.png"];
+    nightvisionEquipment            [label="Nightvision equipment",image="Night-vision-equipment-research.png"];
+    oilProcessing                   [label="Oil processing",image="Oil-gathering-research.png"];
+    optics                          [label="Optics",image="Optics-research.png"];
     personalLaserDefense            [label="Personal laser defense",image="Basic-laser-defense-equipment-research.png"];
     personalRoboport                [label="Personal roboport",image="Personal-roboport-equipment-research.png"];
-    plastics						[label="Plastics",image="Plastics-research.png"];
-    portableFusionReactor			[label="Portable fusion reactor",image="Fusion-reactor-equipment-research.png"];
-    portableSolarPanel				[label="Portable solar panel",image="Solar-panel-equipment-research.png"];
+    plastics                        [label="Plastics",image="Plastics-research.png"];
+    portableFusionReactor           [label="Portable fusion reactor",image="Fusion-reactor-equipment-research.png"];
+    portableSolarPanel              [label="Portable solar panel",image="Solar-panel-equipment-research.png"];
     powerArmor                      [label="Power armor",image="Power-armor-research.png"];
     powerArmor2                     [label="Power armor 2",image="Power-armor-mk2-research.png"];
-    productivityModule				[label="Productivity module",image="Productivity-module-research.png"];
-    productivityModule2				[label="Productivity module 2",image="Productivity-module-research.png"];
-    productivityModule3				[label="Productivity module 3",image="Productivity-module-research.png"];   
+    productivityModule              [label="Productivity module",image="Productivity-module-research.png"];
+    productivityModule2             [label="Productivity module 2",image="Productivity-module-research.png"];
+    productivityModule3             [label="Productivity module 3",image="Productivity-module-research.png"];
     railSignals                     [label="Rail signals",image="Rail-signals-research.png"];
     railway                         [label="Railway",image="Railway-research.png"];
-    // researchEffectivity => labResearchSpeed
     robotics                        [label="Robotics",image="Robotics-research.png"];
-    rocketDamage1					[label="Rocket damage 1",image="Rocket-damage-research.png"];
-    rocketDamage2					[label="Rocket damage 2",image="Rocket-damage-research.png"];
-    rocketDamage3					[label="Rocket damage 3",image="Rocket-damage-research.png"];
-    rocketDamage4					[label="Rocket damage 4",image="Rocket-damage-research.png"];
-    rocketDamage5					[label="Rocket damage 5",image="Rocket-damage-research.png"];
-    rocketDamage6					[label="Rocket damage 6",image="Rocket-damage-research.png"];
+    rocketDamage1                   [label="Rocket damage 1",image="Rocket-damage-research.png"];
+    rocketDamage2                   [label="Rocket damage 2",image="Rocket-damage-research.png"];
+    rocketDamage3                   [label="Rocket damage 3",image="Rocket-damage-research.png"];
+    rocketDamage4                   [label="Rocket damage 4",image="Rocket-damage-research.png"];
+    rocketDamage5                   [label="Rocket damage 5",image="Rocket-damage-research.png"];
+    rocketDamage6                   [label="Rocket damage 6",image="Rocket-damage-research.png"];
+    rocketShootingSpeed1            [label="Rocket shooting speed 1",image="Rocket-speed-research.png"];
+    rocketShootingSpeed2            [label="Rocket shooting speed 2",image="Rocket-speed-research.png"];
+    rocketShootingSpeed3            [label="Rocket shooting speed 3",image="Rocket-speed-research.png"];
+    rocketShootingSpeed4            [label="Rocket shooting speed 4",image="Rocket-speed-research.png"];
+    rocketShootingSpeed5            [label="Rocket shooting speed 5",image="Rocket-speed-research.png"];
+    rocketShootingSpeed6            [label="Rocket shooting speed 6",image="Rocket-speed-research.png"];
+    rocketSilo                      [label="Rocket silo",image="Rocket-silo-research.png"];
     rocketry                        [label="Rocketry",image="Rocketry-research.png"];
-	rocketSilo						[label="Rocket silo",image="Rocket-silo-research.png"];
-    rocketShootingSpeed1			[label="Rocket shooting speed 1",image="Rocket-speed-research.png"];
-    rocketShootingSpeed2			[label="Rocket shooting speed 2",image="Rocket-speed-research.png"];
-    rocketShootingSpeed3			[label="Rocket shooting speed 3",image="Rocket-speed-research.png"];
-    rocketShootingSpeed4			[label="Rocket shooting speed 4",image="Rocket-speed-research.png"];
-    rocketShootingSpeed5			[label="Rocket shooting speed 5",image="Rocket-speed-research.png"];
-    rocketShootingSpeed6			[label="Rocket shooting speed 6",image="Rocket-speed-research.png"];
-    shotgunShellDamage1				[label="Shotgun shell damage 1",image="Shotgun-shell-damage-research.png"];
-    shotgunShellDamage2				[label="Shotgun shell damage 2",image="Shotgun-shell-damage-research.png"];
-    shotgunShellDamage3				[label="Shotgun shell damage 3",image="Shotgun-shell-damage-research.png"];
-    shotgunShellDamage4				[label="Shotgun shell damage 4",image="Shotgun-shell-damage-research.png"];
-    shotgunShellDamage5				[label="Shotgun shell damage 5",image="Shotgun-shell-damage-research.png"];
-	shotgunShellDamage6				[label="Shotgun shell damage 6",image="Shotgun-shell-damage-research.png"];
-    shutgunShellShootingSpeed1		[label="Shotgun shell shooting speed 1",image="Shotgun-shell-speed-research.png"];
-    shutgunShellShootingSpeed2		[label="Shotgun shell shooting speed 2",image="Shotgun-shell-speed-research.png"];
-    shutgunShellShootingSpeed3		[label="Shotgun shell shooting speed 3",image="Shotgun-shell-speed-research.png"];
-    shutgunShellShootingSpeed4		[label="Shotgun shell shooting speed 4",image="Shotgun-shell-speed-research.png"];
-    shutgunShellShootingSpeed5		[label="Shotgun shell shooting speed 5",image="Shotgun-shell-speed-research.png"];
-    shutgunShellShootingSpeed6		[label="Shotgun shell shooting speed 6",image="Shotgun-shell-speed-research.png"];
+    shotgunShellDamage1             [label="Shotgun shell damage 1",image="Shotgun-shell-damage-research.png"];
+    shotgunShellDamage2             [label="Shotgun shell damage 2",image="Shotgun-shell-damage-research.png"];
+    shotgunShellDamage3             [label="Shotgun shell damage 3",image="Shotgun-shell-damage-research.png"];
+    shotgunShellDamage4             [label="Shotgun shell damage 4",image="Shotgun-shell-damage-research.png"];
+    shotgunShellDamage5             [label="Shotgun shell damage 5",image="Shotgun-shell-damage-research.png"];
+    shotgunShellDamage6             [label="Shotgun shell damage 6",image="Shotgun-shell-damage-research.png"];
+    shutgunShellShootingSpeed1      [label="Shotgun shell shooting speed 1",image="Shotgun-shell-speed-research.png"];
+    shutgunShellShootingSpeed2      [label="Shotgun shell shooting speed 2",image="Shotgun-shell-speed-research.png"];
+    shutgunShellShootingSpeed3      [label="Shotgun shell shooting speed 3",image="Shotgun-shell-speed-research.png"];
+    shutgunShellShootingSpeed4      [label="Shotgun shell shooting speed 4",image="Shotgun-shell-speed-research.png"];
+    shutgunShellShootingSpeed5      [label="Shotgun shell shooting speed 5",image="Shotgun-shell-speed-research.png"];
+    shutgunShellShootingSpeed6      [label="Shotgun shell shooting speed 6",image="Shotgun-shell-speed-research.png"];
     solarEnergy                     [label="Solar energy",image="Solar-energy-research.png"];
-    //solarPanelEquipment => portableSolarPanel
     stackInserter                   [label="Stack inserter",image="Stack-inserter-research.png"];
-    steelProcessing					[label="Steel processing",image="Steel-processing-research.png"];
-    stoneWalls						[label="Stone walls",image="Stone-walls-research.png"];
-    sulfurProcessing				[label="Sulfur processing",image="Sulfur-processing-research.png"];
+    steelProcessing                 [label="Steel processing",image="Steel-processing-research.png"];
+    stoneWalls                      [label="Stone walls",image="Stone-walls-research.png"];
+    sulfurProcessing                [label="Sulfur processing",image="Sulfur-processing-research.png"];
     tanks                           [label="Tanks",image="Tanks-research.png"];
-    toolbelt						[label="Toolbelt",image="Toolbelt-research.png"];
-    turrets 						[label="Turrets",image="Turrets-research.png"];
+    toolbelt                        [label="Toolbelt",image="Toolbelt-research.png"];
+    turrets                         [label="Turrets",image="Turrets-research.png"];
     workerRobotCargoSize1           [label="Worker robot cargo size 1",image="Worker-robots-storage-research.png"];
     workerRobotCargoSize2           [label="Worker robot cargo size 2",image="Worker-robots-storage-research.png"];
     workerRobotCargoSize3           [label="Worker robot cargo size 3",image="Worker-robots-storage-research.png"];
@@ -226,7 +231,11 @@ digraph FactorioTechTree {
 
 
     // arrow style definition
-    edge[dir=none,arrowhead=crow,arrowtail=diamond,arrowsize=3,penwidth=3];
+    edge[dir=none,
+        arrowhead=crow,
+        arrowtail=diamond,
+        arrowsize=3,
+        penwidth=1.0];
 
     // edges ( arrows )
     automation ->   electronics;
