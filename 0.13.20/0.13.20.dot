@@ -62,7 +62,7 @@ digraph FactorioTechTree {
     characterLogisticSlots6         [label="Character logistic slots 6",image="Character-logistic-slots-research.png"];
     characterLogisticTrashSlots1    [label="Character logistic trash slots 1",image="Character-logistic-trash-slots-research.png"];
     characterLogisticTrashSlots2    [label="Character logistic trash slots 2",image="Character-logistic-trash-slots-research.png"];
-    characterLogisticTrashSlots3    [label="Character logistic trash slots 3",image="Character-logistic-trash-slots-research.png"];
+    //characterLogisticTrashSlots3    [label="Character logistic trash slots 3",image="Character-logistic-trash-slots-research.png"];
     circuitNetwork                  [label="Circuit network",image="Circuit-network-research.png"];
     clusterGrenade                  [label="Cluster grenade",image="Cluster-grenade-research.png"];
     combatRobitics                  [label="Combat robotics",image="Combat-robotics-research.png"];
@@ -101,26 +101,26 @@ digraph FactorioTechTree {
     flammables                      [label="Flammables",image="Flammables-research.png"];
     flight                          [label="Flight",image="Flying-research.png"];
     fluidHandling                   [label="Fluid handling",image="Fluid-handling-research.png"];
-    followerRobots1                 [label="Follower robot count 1",image="Follower-robots-research.png"];
-    followerRobots10                [label="Follower robot count 10",image="Follower-robots-research.png"];
-    followerRobots11                [label="Follower robot count 11",image="Follower-robots-research.png"];
-    followerRobots12                [label="Follower robot count 12",image="Follower-robots-research.png"];
-    followerRobots13                [label="Follower robot count 13",image="Follower-robots-research.png"];
-    followerRobots14                [label="Follower robot count 14",image="Follower-robots-research.png"];
-    followerRobots15                [label="Follower robot count 15",image="Follower-robots-research.png"];
-    followerRobots16                [label="Follower robot count 16",image="Follower-robots-research.png"];
-    followerRobots17                [label="Follower robot count 17",image="Follower-robots-research.png"];
-    followerRobots18                [label="Follower robot count 18",image="Follower-robots-research.png"];
-    followerRobots19                [label="Follower robot count 19",image="Follower-robots-research.png"];
-    followerRobots2                 [label="Follower robot count 2",image="Follower-robots-research.png"];
-    followerRobots20                [label="Follower robot count 20",image="Follower-robots-research.png"];
-    followerRobots3                 [label="Follower robot count 3",image="Follower-robots-research.png"];
-    followerRobots4                 [label="Follower robot count 4",image="Follower-robots-research.png"];
-    followerRobots5                 [label="Follower robot count 5",image="Follower-robots-research.png"];
-    followerRobots6                 [label="Follower robot count 6",image="Follower-robots-research.png"];
-    followerRobots7                 [label="Follower robot count 7",image="Follower-robots-research.png"];
-    followerRobots8                 [label="Follower robot count 8",image="Follower-robots-research.png"];
-    followerRobots9                 [label="Follower robot count 9",image="Follower-robots-research.png"];
+    followerRobotCount1             [label="Follower robot count 1",image="Follower-robots-research.png"];
+    followerRobotCount10            [label="Follower robot count 10",image="Follower-robots-research.png"];
+    followerRobotCount11            [label="Follower robot count 11",image="Follower-robots-research.png"];
+    followerRobotCount12            [label="Follower robot count 12",image="Follower-robots-research.png"];
+    followerRobotCount13            [label="Follower robot count 13",image="Follower-robots-research.png"];
+    followerRobotCount14            [label="Follower robot count 14",image="Follower-robots-research.png"];
+    followerRobotCount15            [label="Follower robot count 15",image="Follower-robots-research.png"];
+    followerRobotCount16            [label="Follower robot count 16",image="Follower-robots-research.png"];
+    followerRobotCount17            [label="Follower robot count 17",image="Follower-robots-research.png"];
+    followerRobotCount18            [label="Follower robot count 18",image="Follower-robots-research.png"];
+    followerRobotCount19            [label="Follower robot count 19",image="Follower-robots-research.png"];
+    followerRobotCount2             [label="Follower robot count 2",image="Follower-robots-research.png"];
+    followerRobotCount20            [label="Follower robot count 20",image="Follower-robots-research.png"];
+    followerRobotCount3             [label="Follower robot count 3",image="Follower-robots-research.png"];
+    followerRobotCount4             [label="Follower robot count 4",image="Follower-robots-research.png"];
+    followerRobotCount5             [label="Follower robot count 5",image="Follower-robots-research.png"];
+    followerRobotCount6             [label="Follower robot count 6",image="Follower-robots-research.png"];
+    followerRobotCount7             [label="Follower robot count 7",image="Follower-robots-research.png"];
+    followerRobotCount8             [label="Follower robot count 8",image="Follower-robots-research.png"];
+    followerRobotCount9             [label="Follower robot count 9",image="Follower-robots-research.png"];
     gates                           [label="Gates",image="Gates-research.png"];
     grenadeDamage1                  [label="Grenade damage 1",image="Grenade-damage-research.png"];
     grenadeDamage2                  [label="Grenade damage 2",image="Grenade-damage-research.png"];
@@ -191,13 +191,11 @@ digraph FactorioTechTree {
     rocketDamage3                   [label="Rocket damage 3",image="Rocket-damage-research.png"];
     rocketDamage4                   [label="Rocket damage 4",image="Rocket-damage-research.png"];
     rocketDamage5                   [label="Rocket damage 5",image="Rocket-damage-research.png"];
-    rocketDamage6                   [label="Rocket damage 6",image="Rocket-damage-research.png"];
     rocketShootingSpeed1            [label="Rocket shooting speed 1",image="Rocket-speed-research.png"];
     rocketShootingSpeed2            [label="Rocket shooting speed 2",image="Rocket-speed-research.png"];
     rocketShootingSpeed3            [label="Rocket shooting speed 3",image="Rocket-speed-research.png"];
     rocketShootingSpeed4            [label="Rocket shooting speed 4",image="Rocket-speed-research.png"];
     rocketShootingSpeed5            [label="Rocket shooting speed 5",image="Rocket-speed-research.png"];
-    rocketShootingSpeed6            [label="Rocket shooting speed 6",image="Rocket-speed-research.png"];
     rocketSilo                      [label="Rocket silo",image="Rocket-silo-research.png"];
     rocketry                        [label="Rocketry",image="Rocketry-research.png"];
     shotgunShellDamage1             [label="Shotgun shell damage 1",image="Shotgun-shell-damage-research.png"];
@@ -213,6 +211,9 @@ digraph FactorioTechTree {
     shutgunShellShootingSpeed5      [label="Shotgun shell shooting speed 5",image="Shotgun-shell-speed-research.png"];
     shutgunShellShootingSpeed6      [label="Shotgun shell shooting speed 6",image="Shotgun-shell-speed-research.png"];
     solarEnergy                     [label="Solar energy",image="Solar-energy-research.png"];
+    speedModule 	            	[label="Speed module",image="Speed-module-research.png"];
+    speedModule2    	    	    [label="Speed module 2",image="Speed-module-research.png"];
+    speedModule3        	     	[label="Speed module 3",image="Speed-module-research.png"];
     stackInserter                   [label="Stack inserter",image="Stack-inserter-research.png"];
     steelProcessing                 [label="Steel processing",image="Steel-processing-research.png"];
     stoneWalls                      [label="Stone walls",image="Stone-walls-research.png"];
@@ -251,11 +252,11 @@ digraph FactorioTechTree {
     automation2 -> automation3;
     automation2 -> engine;
 
+    automation3 -> logistics3;
+
     engine -> electricEngine;
     engine -> railway;
     engine -> automobilism;
-
-    automation3 -> logistics3;
 
     electricEngine -> flight;
     electricEngine -> robotics;
@@ -276,7 +277,7 @@ digraph FactorioTechTree {
 
     characterLogisticSlots1 -> characterLogisticSlots2 -> characterLogisticSlots3 -> characterLogisticSlots4 -> characterLogisticSlots5 -> characterLogisticSlots6;
 
-    characterLogisticTrashSlots1 -> characterLogisticTrashSlots2 -> characterLogisticTrashSlots3;
+    characterLogisticTrashSlots1 -> characterLogisticTrashSlots2 -> characterAutoLogisticTrashSlots;
 
     workerRobotSpeed1 -> workerRobotSpeed2 -> workerRobotSpeed3 -> workerRobotSpeed4 -> workerRobotSpeed5;
 
@@ -294,6 +295,7 @@ digraph FactorioTechTree {
     automobilism -> tanks;
 
     advancedElectronics -> laser;
+    advancedElectronics -> advancedElectronics2;
     advancedElectronics -> electricEngine;
     advancedElectronics -> advancedMaterialProcessing2;
     advancedElectronics -> stackInserter;
@@ -308,5 +310,168 @@ digraph FactorioTechTree {
     laserTurrets -> dischargeDefense;
 
     laserTurretDamage1 -> laserTurretDamage2 -> laserTurretDamage3 -> laserTurretDamage4 -> laserTurretDamage5 -> laserTurretDamage6;
+    laserTurretShootingSpeed1 -> laserTurretShootingSpeed2 -> laserTurretShootingSpeed3 -> laserTurretShootingSpeed4 -> laserTurretShootingSpeed5 -> laserTurretShootingSpeed6;
 
+    military3 -> military4;
+    military3 -> tanks;
+    military3 -> flamethrowerDamage1;
+    military3 -> combatRobitics2;
+
+	flamethrowerDamage1 -> flamethrowerDamage2 -> flamethrowerDamage3 -> flamethrowerDamage4 -> flamethrowerDamage5 -> flamethrowerDamage6;
+    military4 -> clusterGrenade;
+
+    combatRobitics3 -> followerRobotCount8;
+
+    followerRobotCount8 -> followerRobotCount9 -> followerRobotCount10 -> followerRobotCount11 -> followerRobotCount12 -> followerRobotCount13 -> followerRobotCount14 -> followerRobotCount15 -> followerRobotCount16 -> followerRobotCount17 -> followerRobotCount18 -> followerRobotCount19 -> followerRobotCount20;
+
+    advancedElectronics2 -> robotics;
+    advancedElectronics2 -> effectTransmission;
+    advancedElectronics2 -> rocketSilo;
+
+    advancedMaterialProcessing2 -> concrete;
+
+    stackInserter -> inserterCapacityBonus1 -> inserterCapacityBonus2 -> inserterCapacityBonus3 -> inserterCapacityBonus4 -> inserterCapacityBonus5 -> inserterCapacityBonus6 -> inserterCapacityBonus7;
+
+    modules -> effectTransmission;
+    modules -> effectivityModule;
+    modules -> productivityModule;
+    modules -> speedModule;
+
+    speedModule -> automation3;
+    speedModule -> combatRobitics3;
+    speedModule -> armorCrafting3;
+    speedModule -> speedModule2 -> speedModule3;
+
+    armorCrafting3 -> powerArmor;
+    armorCrafting3 -> energyShieldEquipment;
+    armorCrafting3 -> nightvisionEquipment;
+    armorCrafting3 -> batteryEquipment;
+    armorCrafting3 -> portableSolarPanel;
+    armorCrafting3 -> personalLaserDefense;
+    armorCrafting3 -> dischargeDefense;
+
+    energyShieldEquipment -> energyShieldMK2Equipment;
+
+    batteryEquipment -> batteryEquipment2;
+
+    portableSolarPanel -> personalRoboport;
+    portableSolarPanel -> exoskeletonEquipment;
+    portableSolarPanel -> portableFusionReactor;
+
+	speedModule3 -> powerArmor2;
+	speedModule3 -> rocketSilo;
+
+	effectivityModule -> effectivityModule2 -> effectivityModule3;
+
+	effectivityModule3 -> powerArmor2;
+
+	productivityModule -> productivityModule2 -> productivityModule3;
+
+	productivityModule3 -> rocketSilo;
+    
+	electricEnergyDistribution1 -> electricEnergyAccumulators;
+	electricEnergyDistribution1 -> electricEnergyDistribution2;
+
+	labResearchSpeed1 -> labResearchSpeed2 -> labResearchSpeed3 -> labResearchSpeed4;
+
+	rocketry -> military3;
+	rocketry -> explosiveRocketry;
+	rocketry -> alienTechnology;
+
+	military4 -> clusterGrenade;
+
+	alienTechnology -> rocketDamage1 -> rocketDamage2 -> rocketDamage3 -> rocketDamage4 -> rocketDamage5;
+	alienTechnology -> rocketShootingSpeed1 -> rocketShootingSpeed2 -> rocketShootingSpeed3 -> rocketShootingSpeed4 -> rocketShootingSpeed5 -> rocketSilo;
+	alienTechnology -> powerArmor2;
+	alienTechnology -> dischargeDefense;
+
+
+
+
+	// LOGISTICS
+	logistics -> logistics2;
+	
+	logistics2 -> logistics3;
+	logistics2 -> railway;
+	logistics2 -> stackInserter;
+	logistics2 -> automobilism;
+
+	// OPTICS
+	optics -> laser;
+	optics -> solarEnergy;
+
+	// TURRETS
+	turrets -> laserTurrets;
+	turrets -> gunTurretDamage1 -> gunTurretDamage2 -> gunTurretDamage3 -> gunTurretDamage4 -> gunTurretDamage5 -> gunTurretDamage6;
+
+	// STONE WALLS
+	stoneWalls -> gates;
+
+	// STEEL PROCESSING
+	steelProcessing -> engine;
+	steelProcessing -> solarEnergy;
+	steelProcessing -> advancedMaterialProcessing;
+	steelProcessing -> electricEnergyDistribution1;
+	steelProcessing -> oilProcessing;
+	steelProcessing -> military2;
+	steelProcessing -> armorCrafting2
+
+	oilProcessing -> fluidHandling;
+	oilProcessing -> sulfurProcessing;
+	oilProcessing -> advancedOilProcessing;
+	oilProcessing -> plastics;
+	oilProcessing -> flammables;
+
+	sulfurProcessing -> explosives;
+	sulfurProcessing -> battery;
+
+	explosives -> landmines;
+	explosives -> rocketry;
+
+	battery -> laserTurrets;
+	battery -> electricEnergyAccumulators;
+	battery -> robotics;
+	battery -> batteryEquipment;
+
+	plastics -> advancedElectronics2;
+
+	flammables -> flamethrower;
+	flammables -> rocketry;
+
+	flamethrower -> flamethrowerDamage1;
+
+
+
+	military2 -> gates;
+	military2 -> military3;
+	military2 -> flamethrower;
+	military2 -> landmines;
+	military2 -> grenadeDamage1 -> grenadeDamage2 -> grenadeDamage3 -> grenadeDamage4 -> grenadeDamage5;
+	military2 -> combatRobitics;
+
+	combatRobitics -> combatRobitics2;
+	combatRobitics -> followerRobotCount1;
+	combatRobitics -> combatRobotDamage1;
+
+	combatRobitics2 -> combatRobitics3;
+
+	followerRobotCount1 -> followerRobotCount2 -> followerRobotCount3 -> followerRobotCount4 -> followerRobotCount5 -> followerRobotCount6 -> followerRobotCount7 -> followerRobotCount8;
+
+	combatRobotDamage1 -> combatRobotDamage2 -> combatRobotDamage3 -> combatRobotDamage4 -> combatRobotDamage5;
+
+
+	armorCrafting2 -> armorCrafting3;
+
+	
+
+	// MILITARY
+	military -> military2;
+	military -> bulletDamage1 -> bulletDamage2 -> bulletDamage3 -> bulletDamage4 -> bulletDamage5 -> bulletDamage6;
+	military -> bulletSpeed1 -> bulletSpeed2 -> bulletSpeed3 -> bulletSpeed4 -> bulletSpeed5 -> bulletSpeed6;
+	military -> shotgunShellDamage1 -> shotgunShellDamage2 -> shotgunShellDamage3 -> shotgunShellDamage4 -> shotgunShellDamage5 -> shotgunShellDamage6;
+	military -> shutgunShellShootingSpeed1 -> shutgunShellShootingSpeed2 -> shutgunShellShootingSpeed3 -> shutgunShellShootingSpeed4 -> shutgunShellShootingSpeed5 -> shutgunShellShootingSpeed6;
+
+
+
+	armorCrafting -> armorCrafting2;
 }
